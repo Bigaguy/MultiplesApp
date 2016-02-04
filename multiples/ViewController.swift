@@ -45,8 +45,8 @@ class ViewController: UIViewController {
     
     @IBAction func addButton(sender: AnyObject) {
         if currentNumber<=maxNumber {
-            updateLabel()
             currentNumber=firstNumber+multiple
+            updateLabel()
             firstNumber+=multiple
             
         }
