@@ -46,8 +46,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKQ-4k-Vc7">
-                                <rect key="frame" x="177" y="316" width="246" height="238"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKQ-4k-Vc7">
+                                <rect key="frame" x="170" y="331" width="246" height="238"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="246" id="1EO-dA-FFG"/>
                                     <constraint firstAttribute="height" constant="238" id="aSd-as-BgH"/>
@@ -78,8 +78,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOp-Ka-c1V">
-                                <rect key="frame" x="244" y="278" width="113" height="45"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOp-Ka-c1V">
+                                <rect key="frame" x="244" y="260" width="113" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="mxM-a4-LhF"/>
                                     <constraint firstAttribute="width" constant="113" id="zEu-XG-qzu"/>
@@ -99,12 +99,18 @@
                             <constraint firstItem="8il-pe-YEJ" firstAttribute="top" secondItem="cOp-Ka-c1V" secondAttribute="bottom" constant="32" id="cdU-Oo-slL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D5t-JP-a0P" secondAttribute="trailing" constant="-20" id="jny-sL-OPX"/>
                             <constraint firstItem="HKQ-4k-Vc7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k3H-7e-Kwz"/>
+                            <constraint firstItem="HKQ-4k-Vc7" firstAttribute="top" secondItem="cOp-Ka-c1V" secondAttribute="bottom" constant="26" id="ndW-4o-JVx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HKQ-4k-Vc7" secondAttribute="bottom" constant="46" id="qsv-8X-E50"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8il-pe-YEJ" secondAttribute="bottom" constant="144" id="u1S-Qa-1bb"/>
                             <constraint firstItem="8il-pe-YEJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x3I-7X-qtc"/>
                             <constraint firstItem="GFZ-zk-FDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xkB-oj-rKv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D5t-JP-a0P" secondAttribute="bottom" id="ypJ-EQ-FEr"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cdU-Oo-slL"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="addButton" destination="8il-pe-YEJ" id="uXD-fa-JQp"/>
